@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div id="data">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">search</i>
+        <input id="icon_prefix" type="text" class="validate search" />
+        <label for="icon_prefix">Search</label>
+      </div>
+
+      <center>
+        <ul class="pagination"></ul>
+      </center>
+      <span
+        class="new badge"
+        data-badge-caption="Clique nas colunas para ordenação"
+      ></span>
+      <table class="responsive-table sortable striped z-depth-1">
+        <thead class="z-depth-1">
+          <tr>
+            <th>Abv</th>
+            <th>Address</th>
+            <th>Category</th>
+            <th>City</th>
+            <th>Coordinates</th>
+            <th>Country</th>
+            <th>Description</th>
+            <th>Ibu</th>
+            <th>Name</th>
+            <th>State</th>
+            <th>Website</th>
+          </tr>
+        </thead>
+
+        <tbody class="list"></tbody>
+      </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
